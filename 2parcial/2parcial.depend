@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1530188090 source:d:\2parcial\2parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530187287 d:\2parcial\2parcial\arraylist.h
+
+1530195113 source:d:\2parcial\2parcial\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530196022 d:\2parcial\2parcial\employee.h
+
+1530194218 source:d:\2parcial\2parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"parser.h"
+	"Employee.h"
+
+1530194562 d:\2parcial\2parcial\parser.h
+	"ArrayList.h"
+
+1530195601 source:d:\2parcial\2parcial\parser.c
+	<string.h>
+	<stdio.h>
+	"parser.h"
+	"Employee.h"
+
