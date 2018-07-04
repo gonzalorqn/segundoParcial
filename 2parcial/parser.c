@@ -3,7 +3,7 @@
 #include "parser.h"
 #include "Employee.h"
 
-void parserReadEmpleado(char archivo[],ArrayList* this)
+void parserReadEmpleado(char* archivo,ArrayList* this)
 {
     char nombre[51];
     char profesion[51];
@@ -26,12 +26,12 @@ void parserReadEmpleado(char archivo[],ArrayList* this)
                 aux=employee_new();
                 if(aux!=NULL)
                 {
-                    employee_setId(aux,i+1);
-                    aux->isEmpty = 0;
+                    employee_setId(aux,id);
+                    employee_setIsEmpty(aux,0);
                     employee_setSueldo(aux,sueldo);
                     employee_setEdad(aux,edad);
-                    strcpy(aux->nombre,nombre);
-                    strcpy(aux->profesion,profesion);
+                    employee_setNombre(aux,nombre);
+                    employee_setProfesion(aux,profesion);
                     this->add(this,aux);
                 }
             }
@@ -40,6 +40,27 @@ void parserReadEmpleado(char archivo[],ArrayList* this)
     fclose(pFile);
 }
 
+void parserWriteEmpleado(char* archivo,ArrayList* this)
+{
+    int i;
+    Employee* aux;
+    FILE* pFile;
+
+    if(this!=NULL)
+    {
+        pFile=fopen(archivo,"w");
+
+        if(pFile!=NULL)
+        {
+            for(i=0;i<this->len(this);i++)
+            {
+                aux = (Employee*) this->get(this,i);
+                fprintf(pFile,"%d,%s,%.2f,%d,%s\n",employee_getId(aux),employee_getNombre(aux),employee_getSueldo(aux),employee_getEdad(aux),employee_getProfesion(aux));
+            }
+        }
+        fclose(pFile);
+    }
+}
 
 
 

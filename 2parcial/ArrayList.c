@@ -537,7 +537,6 @@ ArrayList* al_filter(ArrayList* listIn , int (*functionFilter)(void*))
                 }
             }
         }
-
     }
 
     return returnAux;

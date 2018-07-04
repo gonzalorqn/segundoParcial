@@ -3,7 +3,8 @@
 #define PARSER_H_INCLUDED
 
 #endif // PARSER_H_INCLUDED
-void parserReadEmpleado(char archivo[],ArrayList* this);
+void parserReadEmpleado(char* archivo,ArrayList* this);
+void parserWriteEmpleado(char* archivo,ArrayList* this);
 
 
 

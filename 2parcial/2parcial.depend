@@ -30,3 +30,35 @@
 	"parser.h"
 	"Employee.h"
 
+1530729301 source:c:\users\gonzalo\desktop\2parcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1530182130 c:\users\gonzalo\desktop\2parcial\arraylist.h
+
+1530729337 source:c:\users\gonzalo\desktop\2parcial\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Employee.h"
+
+1530727028 c:\users\gonzalo\desktop\2parcial\employee.h
+
+1530729583 source:c:\users\gonzalo\desktop\2parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"parser.h"
+	"Employee.h"
+
+1530729527 c:\users\gonzalo\desktop\2parcial\parser.h
+	"ArrayList.h"
+
+1530730675 source:c:\users\gonzalo\desktop\2parcial\parser.c
+	<string.h>
+	<stdio.h>
+	"parser.h"
+	"Employee.h"
+
